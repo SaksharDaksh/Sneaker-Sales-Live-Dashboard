@@ -1,0 +1,58 @@
+.region-panel {
+  background: var(--card);
+  border-radius: 22px;
+  padding: 24px;
+  height: 100%;
+  min-height: 260px;
+}
+
+.region-panel__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 18px;
+}
+
+.region-panel__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.region-panel__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.region-panel__name {
+  font-size: 12px;
+  color: var(--muted);
+  width: 74px;
+  flex-shrink: 0;
+}
+
+.region-panel__track {
+  flex: 1;
+  height: 7px;
+  border-radius: 4px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.region-panel__fill {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--amber), var(--flame));
+}
+
+.region-panel__empty {
+  font-size: 13px;
+  color: var(--muted);
+}
