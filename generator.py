@@ -13,9 +13,8 @@ Usage:
 import requests
 import random
 import time
-import os
 
-API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000") + "/sales"
+API_URL = "http://127.0.0.1:8000/sales"
 
 # Product IDs 1-18 match the 18 sneakers seeded in seed_products.py
 PRODUCT_IDS = list(range(1, 19))
