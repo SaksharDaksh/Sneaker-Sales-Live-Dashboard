@@ -8,7 +8,6 @@ Run:
 3. streamlit run dashboard.py
 """
 
-import os
 import requests
 import pandas as pd
 import streamlit as st
@@ -19,7 +18,7 @@ from streamlit_autorefresh import st_autorefresh
 # --------------------------------
 # Configuration
 # --------------------------------
-API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000")
+API_URL = "http://127.0.0.1:8000"
 REFRESH_SECONDS = 5
 
 st.set_page_config(
