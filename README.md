@@ -1,10 +1,10 @@
-# 👟 Drop Deck — Live Sneaker Sales Analytics
+# Drop Deck : Live Sneaker Sales Analytics
 
 A full-stack, real-time sales analytics platform simulating live sneaker sales for a multi-brand retailer. Built to demonstrate an end-to-end data pipeline: live ingestion, relational storage, SQL aggregation, and a continuously refreshing dashboard.
 
 ## Overview
 
-Drop Deck simulates a sneaker retailer's live order stream and turns it into real-time business insight. A generator script continuously "sells" sneakers across 18 SKUs and 8 brands, an API ingests and stores every transaction in MySQL, and a Streamlit dashboard auto-refreshes every 5 seconds to surface revenue, top products, regional performance, and category trends — all backed by live SQL aggregation, not static data.
+Drop Deck simulates a sneaker retailer's live order stream and turns it into real-time business insight. A generator script continuously "sells" sneakers across 18 SKUs and 8 brands, an API ingests and stores every transaction in MySQL, and a Streamlit dashboard auto-refreshes every 5 seconds to surface revenue, top products, regional performance, and category trends- all backed by live SQL aggregation, not static data.
 
 ## Architecture
 
@@ -23,11 +23,11 @@ Drop Deck simulates a sneaker retailer's live order stream and turns it into rea
 
 ## Features
 
-- **Live order simulation** — a generator script continuously creates realistic sneaker purchases across regions, brands, and categories
-- **REST API backend** (FastAPI) — ingests live sales and exposes 5 KPI aggregation endpoints
-- **Relational schema** (MySQL) — `products` and `sales` tables with a proper foreign key relationship
+- **Live order simulation** : a generator script continuously creates realistic sneaker purchases across regions, brands, and categories
+- **REST API backend** (FastAPI) : ingests live sales and exposes 5 KPI aggregation endpoints
+- **Relational schema** (MySQL) : `products` and `sales` tables with a proper foreign key relationship
 - **Real-time dashboard** (Streamlit + Plotly) — auto-refreshes every 5 seconds, dark theme, interactive charts for revenue, top products, regional performance, category mix, and revenue trend over time
-- **18 SKUs across 8 brands** — Nike, Adidas, Puma, Converse, Vans, New Balance, Reebok, ASICS — spanning 5 categories: Running, Basketball, Lifestyle, Retro, Skate
+- **18 SKUs across 8 brands** : Nike, Adidas, Puma, Converse, Vans, New Balance, Reebok, ASICS — spanning 5 categories: Running, Basketball, Lifestyle, Retro, Skate
 
 ## Tech Stack
 
@@ -88,7 +88,7 @@ Create the database:
 CREATE DATABASE sales_db;
 ```
 
-⚠️ **Update `database.py` with your own MySQL password.** Never commit real database credentials to a public repository — consider moving this to a `.env` file (excluded via `.gitignore`) before pushing.
+⚠️ **Update `database.py` with your own MySQL password.** Never commit real database credentials to a public repository , consider moving this to a `.env` file (excluded via `.gitignore`) before pushing.
 
 **4. Seed the product catalog**
 ```bash
