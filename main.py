@@ -8,7 +8,7 @@ import schemas
 from database import engine, get_db
 
 # This line looks at models.py and actually CREATES the tables
-# in your MySQL database, if they don't already exist.
+
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Retail Sales Analytics API")
